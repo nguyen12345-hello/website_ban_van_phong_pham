@@ -1,0 +1,436 @@
+{
+  "projectName": "OFFICE PRO",
+  "version": "2.0.0",
+  "description": "E-commerce website for office supplies (Vietnamese)",
+  "createdDate": "2024",
+  "lastUpdated": "2024",
+  
+  "projectStructure": {
+    "html": 9,
+    "css": 8,
+    "javascript": 13,
+    "totalFiles": 30
+  },
+
+  "features": {
+    "authentication": {
+      "status": "✅ Complete",
+      "features": [
+        "User registration with validation",
+        "User login/logout",
+        "Password hashing (Base64)",
+        "Profile management",
+        "Password change functionality",
+        "Account deletion option"
+      ]
+    },
+    
+    "ecommerce": {
+      "status": "✅ Complete",
+      "features": [
+        "23 products with full specifications",
+        "Product filtering by category",
+        "Product search functionality",
+        "Product sorting (newest, price, rating)",
+        "Price range filtering",
+        "Product detail pages with specs",
+        "Ratings and reviews (simulated)",
+        "Related products recommendations"
+      ]
+    },
+    
+    "shopping": {
+      "status": "✅ Complete",
+      "features": [
+        "Add to cart functionality",
+        "Update cart quantities",
+        "Remove from cart",
+        "Cart persistence (LocalStorage)",
+        "Cart count in navbar",
+        "Cart summary with shipping",
+        "Add to wishlist",
+        "View wishlist"
+      ]
+    },
+    
+    "checkout": {
+      "status": "✅ Complete",
+      "features": [
+        "3-step checkout process",
+        "Shipping information form",
+        "Payment method selection (COD, Bank, E-wallet)",
+        "Promo code system (SAVE10, SAVE5, WELCOME)",
+        "Address autocomplete by province/district",
+        "Order summary sidebar",
+        "Order confirmation page",
+        "Discount calculation"
+      ]
+    },
+    
+    "orders": {
+      "status": "✅ Complete",
+      "features": [
+        "Create orders from cart",
+        "Order history tracking",
+        "Order status updates (pending, confirmed, shipped, delivered, cancelled)",
+        "Payment status tracking (unpaid, paid)",
+        "Tracking number generation",
+        "Order cancellation",
+        "Order detail view"
+      ]
+    },
+    
+    "account": {
+      "status": "✅ Complete",
+      "features": [
+        "User dashboard with statistics",
+        "Order history page",
+        "Wishlist management",
+        "Profile editing",
+        "Address management",
+        "Password change",
+        "Account statistics (total orders, spent amount, loyalty points)"
+      ]
+    },
+    
+    "ui_ux": {
+      "status": "✅ Complete",
+      "features": [
+        "Responsive design (mobile, tablet, desktop)",
+        "Navigation bar with auth state",
+        "User dropdown menu",
+        "Toast notifications",
+        "Loading states",
+        "Error handling",
+        "Form validation with feedback",
+        "Smooth animations and transitions",
+        "TYPO-inspired minimalist design"
+      ]
+    },
+    
+    "utilities": {
+      "status": "✅ Complete",
+      "features": [
+        "Email validation",
+        "Phone number validation",
+        "Password strength checking",
+        "Currency formatting (VND)",
+        "Date formatting",
+        "Text truncation",
+        "Debounce/throttle functions",
+        "LocalStorage helpers"
+      ]
+    }
+  },
+
+  "pages": [
+    {
+      "name": "index.html (root)",
+      "description": "Entry point - redirects to main index",
+      "path": "index.html",
+      "access": "public"
+    },
+    {
+      "name": "Home",
+      "description": "Landing page with categories and featured products",
+      "path": "html/index.html",
+      "access": "public",
+      "requiresAuth": false
+    },
+    {
+      "name": "Products",
+      "description": "Product listing with filters, search, sort",
+      "path": "html/products.html",
+      "access": "public",
+      "requiresAuth": false
+    },
+    {
+      "name": "Product Details",
+      "description": "Single product page with specs and reviews",
+      "path": "html/product-detail.html",
+      "parameters": "?id=productId",
+      "access": "public",
+      "requiresAuth": false
+    },
+    {
+      "name": "Cart",
+      "description": "Shopping cart management",
+      "path": "html/cart.html",
+      "access": "public",
+      "requiresAuth": false
+    },
+    {
+      "name": "Checkout",
+      "description": "3-step order completion",
+      "path": "html/checkout.html",
+      "access": "protected",
+      "requiresAuth": true,
+      "steps": [
+        "Shipping Information",
+        "Payment Method Selection",
+        "Order Confirmation"
+      ]
+    },
+    {
+      "name": "Authentication",
+      "description": "Login and registration",
+      "path": "html/auth.html",
+      "access": "public",
+      "requiresAuth": false,
+      "forms": ["login", "register"]
+    },
+    {
+      "name": "Account",
+      "description": "User dashboard and profile",
+      "path": "html/account.html",
+      "access": "protected",
+      "requiresAuth": true,
+      "tabs": [
+        "Dashboard",
+        "Orders",
+        "Wishlist",
+        "Profile",
+        "Addresses",
+        "Security"
+      ]
+    },
+    {
+      "name": "About",
+      "description": "Company information",
+      "path": "html/about.html",
+      "access": "public",
+      "requiresAuth": false
+    },
+    {
+      "name": "Contact",
+      "description": "Contact form",
+      "path": "html/contact.html",
+      "access": "public",
+      "requiresAuth": false
+    }
+  ],
+
+  "products": {
+    "totalCount": 23,
+    "categories": {
+      "paper": 5,
+      "pen": 5,
+      "tools": 5,
+      "other": 3,
+      "combo": 5
+    },
+    "priceRange": {
+      "min": 45000,
+      "max": 850000,
+      "currency": "VND"
+    }
+  },
+
+  "promocodes": [
+    {
+      "code": "SAVE10",
+      "discount": 10,
+      "type": "percentage",
+      "description": "Save 10% on total"
+    },
+    {
+      "code": "SAVE5",
+      "discount": 5,
+      "type": "percentage",
+      "description": "Save 5% on total"
+    },
+    {
+      "code": "WELCOME",
+      "discount": 15,
+      "type": "percentage",
+      "description": "15% off for new customers"
+    }
+  ],
+
+  "paymentMethods": [
+    {
+      "id": "cod",
+      "name": "Cash on Delivery",
+      "vietnameseName": "Thanh toán khi nhận hàng",
+      "icon": "💵"
+    },
+    {
+      "id": "bank",
+      "name": "Bank Transfer",
+      "vietnameseName": "Chuyển khoản ngân hàng",
+      "icon": "🏦"
+    },
+    {
+      "id": "wallet",
+      "name": "E-Wallet",
+      "vietnameseName": "Ví điện tử",
+      "icon": "📱"
+    }
+  ],
+
+  "orderStatuses": [
+    {
+      "status": "pending",
+      "displayName": "Chờ Xác Nhận",
+      "badge": "warning"
+    },
+    {
+      "status": "confirmed",
+      "displayName": "Đã Xác Nhận",
+      "badge": "info"
+    },
+    {
+      "status": "shipped",
+      "displayName": "Đang Giao",
+      "badge": "info"
+    },
+    {
+      "status": "delivered",
+      "displayName": "Đã Giao",
+      "badge": "success"
+    },
+    {
+      "status": "cancelled",
+      "displayName": "Đã Hủy",
+      "badge": "danger"
+    }
+  ],
+
+  "technologies": {
+    "frontend": ["HTML5", "CSS3", "JavaScript ES6+", "Vanilla JS (no framework)"],
+    "storage": ["Browser LocalStorage"],
+    "imageSource": ["Unsplash CDN"],
+    "responsiveness": ["CSS Grid", "Flexbox", "Media Queries"],
+    "browser_support": [
+      "Chrome 90+",
+      "Firefox 88+",
+      "Safari 14+",
+      "Edge 90+"
+    ]
+  },
+
+  "filesInventory": {
+    "htmlFiles": [
+      "index.html (root)",
+      "html/index.html",
+      "html/products.html",
+      "html/product-detail.html",
+      "html/cart.html",
+      "html/checkout.html",
+      "html/auth.html",
+      "html/account.html",
+      "html/about.html",
+      "html/contact.html"
+    ],
+    
+    "cssFiles": [
+      "css/style.css",
+      "css/navbar-auth.css",
+      "css/products.css",
+      "css/product-detail.css",
+      "css/auth.css",
+      "css/account.css",
+      "css/checkout.css",
+      "css/responsive.css"
+    ],
+    
+    "jsFiles": {
+      "core": [
+        "js/products-data.js",
+        "js/utils.js",
+        "js/main.js"
+      ],
+      "systems": [
+        "js/auth.js",
+        "js/order.js",
+        "js/wishlist.js",
+        "js/navbar-auth.js"
+      ],
+      "pages": [
+        "js/products.js",
+        "js/product-detail.js",
+        "js/cart.js",
+        "js/checkout.js",
+        "js/account-page.js",
+        "js/auth-page.js"
+      ]
+    },
+    
+    "documentation": [
+      "README.md",
+      "QUICK_START.md",
+      "DEVELOPER_GUIDE.js",
+      "features.json"
+    ]
+  },
+
+  "localStorageSchema": {
+    "cart": {
+      "type": "Array<CartItem>",
+      "structure": "[{id, quantity, price, addedAt}, ...]"
+    },
+    "currentUser": {
+      "type": "User|null",
+      "structure": "{id, name, email, password, phone, address, createdAt, wishlist, orders}"
+    },
+    "users": {
+      "type": "Array<User>",
+      "structure": "[User, ...]"
+    },
+    "wishlist": {
+      "type": "Array<number>",
+      "structure": "[productId1, productId2, ...]"
+    },
+    "orders": {
+      "type": "Array<Order>",
+      "structure": "[{id, userId, items, totalPrice, shippingInfo, status, paymentMethod, paymentStatus, trackingNumber, createdAt, updatedAt}, ...]"
+    }
+  },
+
+  "testingAccounts": [
+    {
+      "email": "user@example.com",
+      "password": "demo123",
+      "name": "Demo User",
+      "status": "Available for testing"
+    }
+  ],
+
+  "devNotes": {
+    "productImages": "Using Unsplash CDN - ensure internet connection",
+    "dataStorage": "All data stored in LocalStorage - cleared on browser cache clear",
+    "authentication": "Password encoding is basic (Base64) - for production use proper encryption",
+    "offline": "Website fully functional offline (except image loading)",
+    "crossTab": "Data syncs across tabs using storage events"
+  },
+
+  "futureEnhancements": [
+    "Backend API integration",
+    "Real payment gateway (Stripe, PayPal)",
+    "Email notifications",
+    "Admin panel",
+    "Product reviews/comments",
+    "Customer support chat",
+    "Advanced search with autocomplete",
+    "Product comparison",
+    "Progressive Web App (PWA)",
+    "Analytics integration",
+    "Inventory management",
+    "Coupon system",
+    "Loyalty points",
+    "Social sharing"
+  ],
+
+  "performance": {
+    "targetLoadTime": "< 2 seconds",
+    "targetFCP": "< 1.5 seconds",
+    "targetLCP": "< 2.5 seconds",
+    "cacheStrategy": "Browser cache + LocalStorage"
+  },
+
+  "supportContact": {
+    "email": "support@officepro.vn",
+    "phone": "1900 1234",
+    "hours": "8AM - 5PM, Monday - Friday"
+  }
+}

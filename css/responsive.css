@@ -1,0 +1,458 @@
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet (768px and down) */
+@media (max-width: 768px) {
+    :root {
+        --spacing-sm: 0.75rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Navigation */
+    .navbar .container {
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
+
+    .nav-links {
+        gap: var(--spacing-md);
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-right {
+        gap: var(--spacing-md);
+    }
+
+    .search-bar input {
+        width: 120px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Categories */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .category-icon {
+        font-size: 2.5rem;
+    }
+
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: var(--spacing-md);
+    }
+
+    .product-image {
+        height: 150px;
+        font-size: 3rem;
+    }
+
+    /* Products Page */
+    .products-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+    }
+
+    /* Offers */
+    .offer-card.highlight {
+        transform: scale(1);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    /* Cart */
+    .cart-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .cart-summary {
+        position: relative;
+        top: 0;
+    }
+
+    /* Contact */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats & Team */
+    .stats-grid,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Stat Card */
+    .stat-card h3 {
+        font-size: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile (480px and down) */
+@media (max-width: 480px) {
+    :root {
+        --spacing-xs: 0.4rem;
+        --spacing-sm: 0.6rem;
+        --spacing-md: 0.8rem;
+        --spacing-lg: 1.2rem;
+        --spacing-xl: 1.5rem;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    /* Navigation */
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .logo {
+        font-size: 1rem;
+        order: 1;
+        width: 100%;
+    }
+
+    .nav-right {
+        order: 2;
+        width: 100%;
+        gap: var(--spacing-sm);
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid var(--border-color);
+        padding-top: var(--spacing-md);
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid var(--border-color);
+        padding: var(--spacing-md) 0;
+    }
+
+    .search-bar {
+        flex: 1;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+        padding: var(--spacing-lg) var(--spacing-md);
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* Categories */
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .category-icon {
+        font-size: 2rem;
+    }
+
+    /* Products */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .product-card {
+        border: 1px solid var(--border-color);
+    }
+
+    .product-image {
+        height: 120px;
+        font-size: 2.5rem;
+    }
+
+    .product-content {
+        padding: var(--spacing-sm);
+    }
+
+    .product-card h3 {
+        font-size: 0.9rem;
+        min-height: auto;
+        margin: 0.25rem 0;
+    }
+
+    .product-description {
+        display: none;
+    }
+
+    .product-footer {
+        flex-direction: column;
+        gap: 0;
+        padding-top: var(--spacing-sm);
+    }
+
+    .product-pricing {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    /* Cart Table */
+    .cart-table {
+        font-size: 0.9rem;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: var(--spacing-sm);
+    }
+
+    /* Contact Form */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.6rem;
+        font-size: 0.95rem;
+    }
+
+    /* Stats */
+    .stats-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .stat-card {
+        padding: var(--spacing-md);
+    }
+
+    /* Buttons */
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.9rem;
+    }
+
+    .btn.full-width {
+        width: 100%;
+    }
+
+    /* Offer Cards */
+    .offer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-card {
+        padding: var(--spacing-md);
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .page-header h1 {
+        font-size: 1.4rem;
+    }
+
+    /* Special Offer Section */
+    .special-offer {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .special-offer h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Social Links */
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-links a {
+        display: block;
+        text-align: center;
+    }
+
+    /* Map */
+    .map-placeholder {
+        height: 250px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Mobile (360px and down) */
+@media (max-width: 360px) {
+    html {
+        font-size: 13px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card:hover {
+        transform: none;
+    }
+
+    /* Avoid tiny buttons */
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    /* Hide some elements */
+    .search-bar {
+        display: none;
+    }
+}
+
+/* Large Screens (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    /* Enhanced hover effects */
+    .product-card {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .product-card:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    /* More columns on desktop */
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    /* Wider footer layout */
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .cart-icon,
+    .search-bar,
+    .add-to-cart-btn,
+    .btn:not(.print-btn) {
+        display: none;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .product-card {
+        page-break-inside: avoid;
+    }
+}

@@ -1,0 +1,236 @@
+{
+  "description": "All image URLs used in OFFICE PRO",
+  "version": "2.0",
+  "totalImages": 50,
+  "updatedAt": "2024-03-31",
+  
+  "products": {
+    "leatherNotebook": {
+      "name": "Premium Leather Notebook",
+      "fullSize": "https://images.unsplash.com/photo-1507842781183-24f0ceaf0d57?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1507842781183-24f0ceaf0d57?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1507842781183-24f0ceaf0d57?w=200&h=200&fit=crop",
+      "description": "Luxury notebook with premium leather cover"
+    },
+    "fountainPen": {
+      "name": "Fountain Pen Set",
+      "fullSize": "https://images.unsplash.com/photo-1516280440614-37939635add3?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1516280440614-37939635add3?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1516280440614-37939635add3?w=200&h=200&fit=crop",
+      "description": "Professional fountain pen collection"
+    },
+    "paperPremium": {
+      "name": "Paper A4 Premium",
+      "fullSize": "https://images.unsplash.com/photo-1497206365907-0fba630882cf?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1497206365907-0fba630882cf?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1497206365907-0fba630882cf?w=200&h=200&fit=crop",
+      "description": "High quality A4 printing paper"
+    },
+    "gelPen": {
+      "name": "Gel Pen 10 Colors",
+      "fullSize": "https://images.unsplash.com/photo-1580684287469-eea3ffeee848?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1580684287469-eea3ffeee848?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1580684287469-eea3ffeee848?w=200&h=200&fit=crop",
+      "description": "Colorful gel pen set"
+    },
+    "stickyNotes": {
+      "name": "Sticky Notes",
+      "fullSize": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=200&h=200&fit=crop",
+      "description": "Rainbow sticky note pads"
+    },
+    "mechanicalPencil": {
+      "name": "Mechanical Pencil",
+      "fullSize": "https://images.unsplash.com/photo-1603841455335-c74aeb588b54?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1603841455335-c74aeb588b54?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1603841455335-c74aeb588b54?w=200&h=200&fit=crop",
+      "description": "Precision mechanical pencil set"
+    },
+    "deskOrganizer": {
+      "name": "Desktop Organizer",
+      "fullSize": "https://images.unsplash.com/photo-1582811421797-47edd8f46e6a?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1582811421797-47edd8f46e6a?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1582811421797-47edd8f46e6a?w=200&h=200&fit=crop",
+      "description": "Modern desktop storage organizer"
+    },
+    "planner2024": {
+      "name": "Planner 2024",
+      "fullSize": "https://images.unsplash.com/photo-1546481614112-a6ff43bb4c5f?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1546481614112-a6ff43bb4c5f?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1546481614112-a6ff43bb4c5f?w=200&h=200&fit=crop",
+      "description": "Daily planner for 2024"
+    },
+    "tapeDispenser": {
+      "name": "Tape Dispenser",
+      "fullSize": "https://images.unsplash.com/photo-1531478780131-ff657a9a0d96?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1531478780131-ff657a9a0d96?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1531478780131-ff657a9a0d96?w=200&h=200&fit=crop",
+      "description": "Professional tape dispenser"
+    },
+    "watercolorSet": {
+      "name": "Watercolor Set",
+      "fullSize": "https://images.unsplash.com/photo-1579783902614-e3fb5141b0cb?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1579783902614-e3fb5141b0cb?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1579783902614-e3fb5141b0cb?w=200&h=200&fit=crop",
+      "description": "Professional watercolor paints"
+    },
+    "bulletJournal": {
+      "name": "Bullet Journal Kit",
+      "fullSize": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=200&h=200&fit=crop",
+      "description": "Complete bullet journal kit"
+    },
+    "carbonPaper": {
+      "name": "Carbon Paper",
+      "fullSize": "https://images.unsplash.com/photo-1577720643272-265f434fc433?w=600&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1577720643272-265f434fc433?w=300&h=300&fit=crop",
+      "small": "https://images.unsplash.com/photo-1577720643272-265f434fc433?w=200&h=200&fit=crop",
+      "description": "Premium carbon paper sheets"
+    }
+  },
+
+  "features": {
+    "design": {
+      "name": "Thiết Kế TYPO",
+      "url": "https://images.unsplash.com/photo-1577720643272-265f434fc433?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Typography-focused design"
+    },
+    "filter": {
+      "name": "Bộ Lọc Thông Minh",
+      "url": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Smart filtering system"
+    },
+    "responsive": {
+      "name": "100% Responsive",
+      "url": "https://images.unsplash.com/photo-1593642632823-8f0af0d0405d?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Mobile responsive design"
+    },
+    "effects": {
+      "name": "Hiệu Ứng Tương Tác",
+      "url": "https://images.unsplash.com/photo-1526881978824-510a269b9fbb?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Interactive effects"
+    },
+    "wishlist": {
+      "name": "Hệ Thống Yêu Thích",
+      "url": "https://images.unsplash.com/photo-1553725784-e91953dec042?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Wishlist system"
+    },
+    "cart": {
+      "name": "Giỏ Hàng Thông Minh",
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Smart shopping cart"
+    }
+  },
+
+  "heroes": {
+    "main": {
+      "name": "Hero Main",
+      "url": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1920&h=1080&fit=crop",
+      "size": "1920x1080",
+      "description": "Homepage hero background"
+    },
+    "cta": {
+      "name": "CTA Background",
+      "url": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1920&h=1080&fit=crop",
+      "size": "1920x1080",
+      "description": "Call-to-action section background"
+    },
+    "about": {
+      "name": "About Background",
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop",
+      "size": "1200x600",
+      "description": "About page background"
+    }
+  },
+
+  "categories": {
+    "paper": {
+      "name": "Giấy & Tập",
+      "url": "https://images.unsplash.com/photo-1577720643272-265f434fc433?w=400&h=400&fit=crop",
+      "size": "400x400",
+      "description": "Paper and notebooks category"
+    },
+    "pens": {
+      "name": "Bút & Chì",
+      "url": "https://images.unsplash.com/photo-1516280440614-37939635add3?w=400&h=400&fit=crop",
+      "size": "400x400",
+      "description": "Pens and pencils category"
+    },
+    "tools": {
+      "name": "Dụng Cụ",
+      "url": "https://images.unsplash.com/photo-1582811421797-47edd8f46e6a?w=400&h=400&fit=crop",
+      "size": "400x400",
+      "description": "Tools category"
+    },
+    "other": {
+      "name": "Khác",
+      "url": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=400&fit=crop",
+      "size": "400x400",
+      "description": "Other products category"
+    }
+  },
+
+  "testimonials": {
+    "avatar1": {
+      "name": "Avatar 1",
+      "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Customer testimonial avatar"
+    },
+    "avatar2": {
+      "name": "Avatar 2",
+      "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Customer testimonial avatar"
+    },
+    "avatar3": {
+      "name": "Avatar 3",
+      "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop",
+      "size": "150x150",
+      "description": "Customer testimonial avatar"
+    }
+  },
+
+  "banners": {
+    "sale": {
+      "name": "Sale Banner",
+      "url": "https://images.unsplash.com/photo-1571047035754-7f3dbc26e6d7?w=1200&h=600&fit=crop",
+      "size": "1200x600",
+      "description": "Sales promotion banner"
+    },
+    "newArrivals": {
+      "name": "New Arrivals",
+      "url": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200&h=600&fit=crop",
+      "size": "1200x600",
+      "description": "New products banner"
+    }
+  },
+
+  "utilities": {
+    "placeholder_url": "https://via.placeholder.com/[width]x[height]?text=[text]",
+    "placeholder_example": "https://via.placeholder.com/600x600?text=Product+Image",
+    "unsplash_resize_params": {
+      "w": "width in pixels",
+      "h": "height in pixels", 
+      "q": "quality 0-100",
+      "fit": "crop|max|min",
+      "auto": "format|enhance"
+    }
+  },
+
+  "metadata": {
+    "license": "Unsplash CC0 License - Free for commercial and non-commercial use",
+    "attribution": "Not required but appreciated",
+    "cdn": "Unsplash CDN - Global distribution",
+    "performance": "Optimized for web - compressed and cached",
+    "responsive": "All images support responsive sizing via URL parameters"
+  }
+}
