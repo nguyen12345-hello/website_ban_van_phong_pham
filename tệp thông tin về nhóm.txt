@@ -1,0 +1,13 @@
+1. Số nhóm: 5
+
+2. Mã đề tài: 30
+
+3. Tên đề tài:website giới thiệu bán văn phòng phẩm trực tuyến
+
+4. Họ và tên nhóm trưởng: Nguyễn Thuận Nguyên
+
+5. MSSV nhóm trưởng: 22682751
+
+6. Link github: https://github.com/nguyen12345-hello/website_ban_van_phong_pham
+
+7. Link website: https://nguyen12345-hello.github.io/website_ban_van_phong_pham/home.html
